@@ -1,45 +1,47 @@
 html, body, .site{
     height: 200vh;
-    color: white;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;  
 }
+@font-face {
+    font-family:"Rollbox";
+    src: url("./scifi-font/RollboxExtraBoldItalic-x3Wmj.ttf") format("truetype");
+  }
 .site{
     display: flex;
     flex-direction: column;
 }
 .top-container{
+    display:flex;
     flex-direction: column;
-    flex: 3 1 1;
+    flex:2;
+    background:#1F2937;
 }
-.top-container > .welcome-container{
-    flex:1;
-}
-.site > *{
-    flex:1;
+.site {
     display: flex;
 }
 .header{
     background:#1F2937;
     display:flex;
     padding: 12px 36px;
-}
-.top-container{
-    background:#1F2937;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap:wrap;
 }
 .info{
     background: rgb(255, 255, 255);
     display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    flex:2;
 
 }
 .imagebox{
     display:flex;
     gap: 50px;
     flex-wrap:wrap;
-    flex: 1;
+    flex: 2;
+    
 }
 .image{
     width: 100px;
@@ -54,7 +56,7 @@ html, body, .site{
     background: #3882F6;
     gap: 32px;
     border-radius: 10px;
-    padding: 32px 64px;
+    padding: 32px 48px;
     justify-content: center;
     align-items: center;
 }
@@ -88,13 +90,17 @@ html, body, .site{
 .quote{
     background: #E5E7EB;
     display: flex;
+    flex:2;
+    justify-content: center;
+    align-items: center;
 }
 .quote-container{
     display:flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 100px;
+    align-items: center;
     gap: 8px;
+    width: 700px;
 }
 .quote-text{
     font-size: 36px;
@@ -109,13 +115,14 @@ html, body, .site{
     align-self: flex-end;
     font-size: 20px;
     color:black;
-    font-weigh:bold;
+    font-weight: bold;
 }
 .subscribe{
     background: white;
     display:flex;
     justify-content: center;
     align-items: center;
+    flex:2;
 }
 .footer{
     background: yellow;
@@ -131,27 +138,27 @@ ul{
     padding:0;
     list-style: none;
     justify-content: flex-end;
-    gap: 10px;
+    gap: 25px;
+    flex-wrap: wrap;
 }
-.header > *{
-    flex: 1;
-    align-items: center;
-}
+
 .header .header-logo{
+    font-family: Rollbox;
     font-size: 24px;
     font-weight: bold;
+    color:white;
 }
-img{
-    width: 150px;
-    height: 100px;
-}
+
 .welcome-container{
     display:flex;
-    justify-content: center;
-    align-items: center;
-    padding: 18px;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 34px;
     gap: 16px;
+    flex:1;
+    flex-basis:300px;
 }
+
 .header-text{
     font-size: 48px;
     font-weight: 900;
@@ -177,5 +184,17 @@ img{
     align-self: flex-start;
     border: none;
 }
-
-
+.footer{
+    display:flex;
+    background: #1F2937;
+    align-items: center;
+    justify-content: center;
+    flex-basis: 100px;
+}
+.image-intro{
+    width: 500px;
+}
+.image-intro img{
+    height: 100%;
+    width: 100%;
+}
