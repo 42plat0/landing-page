@@ -1,5 +1,5 @@
 html, body, .site{
-    height: 100vh;
+    height: 200vh;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;  
@@ -10,8 +10,9 @@ html, body, .site{
 }
 .top-container{
     flex-direction: column;
+    flex: 3 1 1;
 }
-.top-container > .welcome{
+.top-container > .welcome-container{
     flex:1;
 }
 .site > *{
@@ -19,13 +20,12 @@ html, body, .site{
     display: flex;
 }
 .header{
-    background:darkblue;
+    background:#1F2937;
     display:flex;
     padding: 12px 36px;
-    border-bottom: 8px solid goldenrod;
 }
 .top-container{
-    background:blue;
+    background:#1F2937;
 }
 .info{
     background: red;
@@ -59,4 +59,41 @@ ul{
     font-size: 24px;
     font-weight: bold;
 }
+img{
+    width: 150px;
+    height: 100px;
+}
+.welcome-container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding: 18px;
+    gap: 16px;
+}
+.header-text{
+    font-size: 48px;
+    font-weight: 900;
+    color: #F9FAF8;
+}
+.text{
+    font-size: 18px;
+    color: #F9FAF8;
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 400px;
+}
+
+.content button{
+    background: #3882F6;
+    padding: 8px 32px;
+    border-radius: 8px;
+    color: white;
+    font-weight: 700;
+    align-self: flex-start;
+    border: none;
+}
+
 
