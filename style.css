@@ -1,0 +1,32 @@
+html, body, .site{
+    height: 100vh;
+}
+.site{
+    display: flex;
+    flex-direction: column;
+}
+.top-container{
+    flex-direction: column;
+}
+.top-container > .welcome{
+    flex:1;
+}
+.site > *{
+    flex:1;
+    display: flex;
+}
+.top-container{
+    background:blue;
+}
+.info{
+    background: red;
+}
+.quote{
+    background: palevioletred;
+}
+.subscribe{
+    background: violet;
+}
+.footer{
+    background: yellow;
+}
