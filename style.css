@@ -1,5 +1,8 @@
 html, body, .site{
     height: 100vh;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto', sans-serif;  
 }
 .site{
     display: flex;
@@ -14,6 +17,12 @@ html, body, .site{
 .site > *{
     flex:1;
     display: flex;
+}
+.header{
+    background:darkblue;
+    display:flex;
+    padding: 12px 36px;
+    border-bottom: 8px solid goldenrod;
 }
 .top-container{
     background:blue;
@@ -30,3 +39,24 @@ html, body, .site{
 .footer{
     background: yellow;
 }
+a{
+    color: white;
+    text-decoration: none;
+}
+ul{
+    display: flex;
+    margin:0;
+    padding:0;
+    list-style: none;
+    justify-content: flex-end;
+    gap: 10px;
+}
+.header > *{
+    flex: 1;
+    align-items: center;
+}
+.header .header-logo{
+    font-size: 24px;
+    font-weight: bold;
+}
+
