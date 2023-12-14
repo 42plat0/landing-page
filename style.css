@@ -1,5 +1,6 @@
 html, body, .site{
     height: 200vh;
+    background:#1F2937;
     font-family: 'Open Sans', sans-serif;
     font-family: 'Roboto', sans-serif;  
 }
@@ -27,6 +28,7 @@ html, body, .site{
     justify-content: space-around;
     align-items: center;
     flex-wrap:wrap;
+
 }
 .info{
     background: rgb(255, 255, 255);
@@ -34,22 +36,27 @@ html, body, .site{
     flex-direction: column;
     align-items: center;
     flex:2;
-
 }
 .imagebox{
     display:flex;
     gap: 50px;
     flex-wrap:wrap;
-    flex: 2;
-    
 }
 .image{
-    width: 100px;
-    height: 100px;
-    border: 2px solid blue;
+    width: 120px;
+    height: 170px;
+    border: 2px solid rgb(113, 113, 165);
 }
+.image img{
+    width: 120px;
+    height: 170px;
+}
+
 .text-image{
     color: black;
+    padding-top:10px;
+    font-size: 24px;
+    font-style: italic;
 }
 .subscribe-bar{
     display:flex;
@@ -59,6 +66,29 @@ html, body, .site{
     padding: 32px 48px;
     justify-content: center;
     align-items: center;
+}
+@keyframes zoom-in-zoom-out {
+    0% {
+      transform: scale(1, 1);
+    }
+    0.5% {
+      transform: scale(1.2, 1.2);
+    }
+  }
+.imagebox .info:hover{
+    .image{
+        box-shadow: 0.001px 0 10px 20px #b2fff5;
+        animation: zoom-in-zoom-out 100s  infinite;
+    }
+    .image img{
+        animation: zoom-in-zoom-out 100s infinite;
+    }
+    .text-image{
+        font-size: 25px;
+        padding-top: 50px;
+        font-weight: bold;
+        color: #5667da;
+    }
 }
 .subscribe-bar button{
     background: #3882F6;
@@ -90,7 +120,7 @@ html, body, .site{
 .quote{
     background: #E5E7EB;
     display: flex;
-    flex:2;
+    flex:2.5;
     justify-content: center;
     align-items: center;
 }
@@ -100,7 +130,7 @@ html, body, .site{
     justify-content: center;
     align-items: center;
     gap: 8px;
-    width: 700px;
+    width: 900px;
 }
 .quote-text{
     font-size: 36px;
@@ -108,12 +138,11 @@ html, body, .site{
     color: #1F2937;
     text-wrap:wrap;
     max-width: max-content;
-    word-break: break-all;
     font-weight: lighter;
 }
 .quote-text-author{
     align-self: flex-end;
-    font-size: 20px;
+    font-size: 24px;
     color:black;
     font-weight: bold;
 }
@@ -149,6 +178,10 @@ ul{
     color:white;
 }
 
+.header .header-logo:hover{
+    font-size: 30px;
+}
+
 .welcome-container{
     display:flex;
     justify-content: space-evenly;
@@ -171,8 +204,8 @@ ul{
 .content{
     display: flex;
     flex-direction: column;
-    gap: 8px;
-    width: 400px;
+    gap: 21px;
+    width: 500px;
 }
 
 .content button{
@@ -184,6 +217,11 @@ ul{
     align-self: flex-start;
     border: none;
 }
+.content button:hover{
+    color: #3882F6;
+    background: white;
+}
+
 .footer{
     display:flex;
     background: #1F2937;
@@ -193,6 +231,7 @@ ul{
 }
 .image-intro{
     width: 500px;
+    box-shadow: 5px -8px 1px 0px white;
 }
 .image-intro img{
     height: 100%;
